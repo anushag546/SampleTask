@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="roadregistry.PersonTest" time="0.152" tests="15" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="roadregistry.PersonTest" time="0.047" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="AU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Madhukar Reddy Sama\AppData\Local\Temp\surefire12766488133170351072\surefirebooter-20250526232345340_3.jar C:\Users\Madhukar Reddy Sama\AppData\Local\Temp\surefire12766488133170351072 2025-05-26T23-23-45_089-jvmRun1 surefire-20250526232345340_1tmp surefire_0-20250526232345340_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Madhukar Reddy Sama\AppData\Local\Temp\surefire10409523443626166867\surefirebooter-20250526234148744_3.jar C:\Users\Madhukar Reddy Sama\AppData\Local\Temp\surefire10409523443626166867 2025-05-26T23-41-48_553-jvmRun1 surefire-20250526234148744_1tmp surefire_0-20250526234148744_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Madhukar Reddy Sama\eclipse-workspace\roadregistry\target\test-classes;C:\Users\Madhukar Reddy Sama\eclipse-workspace\roadregistry\target\classes;C:\Users\Madhukar Reddy Sama\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\Madhukar Reddy Sama\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Madhukar Reddy Sama\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\Madhukar Reddy Sama\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Madhukar Reddy Sama\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\Madhukar Reddy Sama\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Users\Madhukar Reddy Sama\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Madhukar Reddy Sama\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Madhukar Reddy Sama\AppData\Local\Temp\surefire12766488133170351072\surefirebooter-20250526232345340_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Madhukar Reddy Sama\AppData\Local\Temp\surefire10409523443626166867\surefirebooter-20250526234148744_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+6-LTS"/>
@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testValidDemeritPointsUnder21Suspended" classname="roadregistry.PersonTest" time="0.044">
+  <testcase name="testValidDemeritPointsUnder21Suspended" classname="roadregistry.PersonTest" time="0.021">
     <failure message="expected: &lt;Success&gt; but was: &lt;Failed&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Success> but was: <Failed>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -68,50 +68,13 @@
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at roadregistry.PersonTest.testValidDemeritPointsUnder21Suspended(PersonTest.java:44)
+	at roadregistry.PersonTest.testValidDemeritPointsUnder21Suspended(PersonTest.java:13)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
   </testcase>
-  <testcase name="testInvalidBirthdayFormat" classname="roadregistry.PersonTest" time="0.004"/>
-  <testcase name="testInvalidOffenseDateFormat" classname="roadregistry.PersonTest" time="0.009"/>
-  <testcase name="testInvalidPersonID" classname="roadregistry.PersonTest" time="0.002"/>
-  <testcase name="testValidDemeritPointsOver21NotSuspended" classname="roadregistry.PersonTest" time="0.023">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at roadregistry.PersonTest.testValidDemeritPointsOver21NotSuspended(PersonTest.java:53)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-]]></failure>
-  </testcase>
-  <testcase name="testUpdateAllInvalidDetails" classname="roadregistry.PersonTest" time="0.002"/>
-  <testcase name="testChangeBirthdayOnly" classname="roadregistry.PersonTest" time="0.001"/>
-  <testcase name="testValidDemeritPointsEdgeSuspension" classname="roadregistry.PersonTest" time="0.007">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at roadregistry.PersonTest.testValidDemeritPointsEdgeSuspension(PersonTest.java:74)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-]]></failure>
-  </testcase>
-  <testcase name="testAllInvalidAddPerson" classname="roadregistry.PersonTest" time="0.002"/>
-  <testcase name="testInvalidDemeritPointsValue" classname="roadregistry.PersonTest" time="0.003"/>
-  <testcase name="testUpdateWithValidDetails" classname="roadregistry.PersonTest" time="0.002"/>
-  <testcase name="testEvenIDCannotChange" classname="roadregistry.PersonTest" time="0.003"/>
-  <testcase name="testUpdateAddressUnder18" classname="roadregistry.PersonTest" time="0.002"/>
-  <testcase name="testInvalidAddressFormat" classname="roadregistry.PersonTest" time="0.002"/>
-  <testcase name="testValidAddPerson" classname="roadregistry.PersonTest" time="0.003"/>
+  <testcase name="testInvalidOffenseDateFormat" classname="roadregistry.PersonTest" time="0.002"/>
+  <testcase name="testValidDemeritPointsOver21NotSuspended" classname="roadregistry.PersonTest" time="0.011"/>
+  <testcase name="testInvalidDemeritPointsValue" classname="roadregistry.PersonTest" time="0.002"/>
 </testsuite>
