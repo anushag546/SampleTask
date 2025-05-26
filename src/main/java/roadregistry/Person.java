@@ -2,6 +2,11 @@ package roadregistry;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
 public class Person {
 
@@ -12,7 +17,8 @@ public class Person {
     private String birthday;
     private int demeritPoints;
     private boolean isSuspended;
-
+    private List<String[]> demeritHistory = new ArrayList<>();
+    
     public Person(String personID, String firstName, String lastName, String address, String birthday) {
         this.personID = personID;
         this.firstName = firstName;
@@ -42,11 +48,25 @@ public class Person {
     }
 
     public String addDemeritPoints(String offenseDate, int points) {
-        if (!validateDate(offenseDate) || points < 1 || points > 6) return "Failed";
-        this.demeritPoints += points;
+        if (!validateDate(offenseDate) || points < 1 || points > 6)
+            return "Failed";
+
+        // Add to history
+        demeritHistory.add(new String[]{offenseDate, String.valueOf(points)});
+
+        // Recalculate total points in last 2 years
+        int recentPoints = 0;
+        LocalDate offense = LocalDate.parse(offenseDate, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+
+        for (String[] record : demeritHistory) {
+            LocalDate recordDate = LocalDate.parse(record[0], DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+            if (ChronoUnit.YEARS.between(recordDate, offense) <= 2) {
+                recentPoints += Integer.parseInt(record[1]);
+            }
+        }
 
         int age = calculateAge(this.birthday);
-        if ((age < 21 && this.demeritPoints > 6) || (age >= 21 && this.demeritPoints > 12)) {
+        if ((age < 21 && recentPoints > 6) || (age >= 21 && recentPoints > 12)) {
             this.isSuspended = true;
         }
 
