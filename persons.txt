@@ -3,3 +3,7 @@
 23!_&$%gAZ|Ella|Blue|12|Street|Melbourne|Victoria|Australia|01-01-2000
 23!_&$%gAZ|John|Doe|12|Main Street|Melbourne|Victoria|Australia|10-10-1990
 23!@_&%aAZ|AAAACD|BBB|32|Highland Street|Melbourne|Victoria|Australia|10-10-1995
+23!_&$%gAZ|Sam|Young|32|Street|Melbourne|Victoria|Australia|01-01-2007
+23!_&$%gAZ|Alex|Old|32|Street|Melbourne|Victoria|Australia|01-01-1990
+23!_&$%gAZ|Ella|Blue|12|Street|Melbourne|Victoria|Australia|01-01-2000
+23!_&$%gAZ|John|Doe|12|Main Street|Melbourne|Victoria|Australia|10-10-1990

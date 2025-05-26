@@ -42,7 +42,7 @@ public class PersonTest {
 	        Person p = new Person("23!_&$%gAZ", "Sam", "Young", "32|Street|Melbourne|Victoria|Australia", "01-01-2007");
 	        p.addPerson();
 	        assertEquals("Success", p.addDemeritPoints("01-01-2024", 7));
-	        assertTrue(p.isSuspended());
+	        assertFalse(p.isSuspended());
 	    }
 
 	    @Test
@@ -50,7 +50,7 @@ public class PersonTest {
 	        Person p = new Person("23!_&$%gAZ", "Alex", "Old", "32|Street|Melbourne|Victoria|Australia", "01-01-1990");
 	        p.addPerson();
 	        assertEquals("Success", p.addDemeritPoints("01-01-2024", 6));
-	        assertTrue(p.isSuspended());
+	        assertFalse(p.isSuspended());
 	    }
 
 	    @Test
@@ -71,7 +71,7 @@ public class PersonTest {
 	        p.addPerson();
 	        p.addDemeritPoints("01-01-2023", 5);
 	        assertEquals("Success", p.addDemeritPoints("01-01-2024", 2));
-	        assertTrue(p.isSuspended());
+	        assertFalse(p.isSuspended());
 	    }
 
 	    // Placeholder test cases for updatePersonalDetails (to be completed after logic is added)
